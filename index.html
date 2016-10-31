@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AUCTION</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>	
+</head>
+<body>
+
+	<!-- MODAL SIGN IN -->
+	<div id="signIn" class="modalWindow">
+		<div>
+			<a href="#close" title="Закрыть" class="close">X</a>
+			<h2>Log IN</h2>
+			<form id="form-login" method="post">
+				<p>
+					<label for="usermail">E-mail :</label>
+					<input type="email" id="usermail" name="email" form="form-login" placeholder="Enter your E-mail" required aria-required="true" />
+				</p>
+				<p>
+					<label for="userpass">Password :</label>
+					<input type="password" id="userpass" name="password" form="form-login" placeholder="Enter your Password" required aria-required="true" />
+				</p>
+				<p>
+					<label for="remember">Remember Me :</label>
+					<input type="checkbox" name="remember">
+				</p>
+				<div>
+					<input type="submit" name="submit" value="Sign In">
+					<input type="reset" value="Clear form"/><p class="form-coment">Forgot your password? <a href="#">Click Here!</a></p>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+
+	<!-- MODAL REGISTRATION -->
+	<div id="registration" class="modalWindow modalWindow--registration">
+		<div>
+			<a href="#close" title="Закрыть" class="close">X</a>
+			<h2>REGISTRATION</h2>
+			<form id="form-createAccount" method="post">
+				<div class="left-col">
+					<p>
+						<label for="username">First Name :</label>
+						<input type="text" name="username" id="username" placeholder="Enter Your Name" required aria-required="true" >
+					</p>
+					<p>
+						<label for="lastname">Last Name :</label>
+						<input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name" required aria-required="true" >
+					</p>
+					<p>
+						<label>Password :</label>
+						<input type="password" name="password" id="password" placeholder="Enter Your Password" required aria-required="true"/>	
+					</p>
+					<p>
+						<label>Confirm password :</label>
+						<input type="password" name="password" id="confirmpassword" placeholder="Confirm Your Password" required aria-required="true"/>	
+					</p>
+					<div class="registration-agreements">
+						<p><input type="checkbox" id="agreement" value="true"/><label for="agreement"> I agree to the Terms of Use</label></p>
+						<p><input type="checkbox" id="remember" value="true"/><label for="remember"> Remember Me</label></p>			
+						<p><input type="checkbox" id="news" value="true"/><label for="news"> I want to recive the news and offers</label></p>
+					</div>
+				</div>
+				<div class="right-col">
+					<p>
+						<label>Date of Birth :</label>
+						<input type="date" id="date" name="date" required />
+					</p>
+					<p>
+						<label>Country :</label>
+						<select name="country">
+							<option value="us">United States</option>
+							<option value="en">United Kingdom</option>
+							<option value="ua">UKraine</option>
+						</select>
+					</p>
+					<p>
+						<label>E-mail :</label>
+						<input id="email" type="email" name="email" placeholder="name@domain.com" required multiple/>
+					</p>
+					<p>
+						<label>Phone :</label>
+						<input id="tel" type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+					</p>
+					<p>
+						<label>Gender :</label>
+						<span>Male</span><input type="radio" name="gender" value="Male">
+						<span>Female</span><input type="radio" name="gender" value="Female">
+					</p>
+					<div>
+						<input type="submit" name="submit" value="Create account">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- MODALS ends -->
+	<header>
+		<div class="top-bar">
+			<div class="wrapper">
+				<p class="phones"><img src="images/phone-icon.png" alt="">Free phone: <strong>800-2345-6789</strong></p>
+				<div class="header-buttons">
+					<a href="#signIn" class="menu-button">Sign In</a>
+					<a href="#registration" class="menu-button">Registration</a>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<menu>
+				<img src="images/logo.png" alt="">
+				<nav>
+					<ul class="main-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Sell</a></li>
+						<li><a href="#">Buy</a></li>
+						<li><a href="#">Contuct us</a></li>
+					</ul>
+				</nav>
+			</menu>
+		</div>
+	</header>
+	<main>
+		<section class="slider">
+				<div class="slide">
+					<div class="banner-content">
+						<h2>The best place</h2>
+						<p><strong>to buy and sell!</strong></p>
+						<a href="#registration" class="banner-register">Register</a>
+						<img class="img-2" src="images/banner-arrow.png"  alt="">
+					</div>
+					<img class="img-1" src="images/banner.png" alt="">
+				</div>
+		</section>
+		<section>
+			<div class="wrapper">		
+				<h2 class="title auction-area"><span>Current</span> Auctions</h2>
+				<ul class="lots">
+					<li>
+						<figure>
+							<img src="images/lot-1-1.png" alt="">
+							<figcaption>
+								<p><mark>Lot #1:</mark> Ekatherine II</p>
+								<p class="lot-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p class="price">price: 136 <em>$</em></p>
+								<p><a href="#">Join</a></p>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/lot-2-1.png" alt="">
+							<figcaption>
+								<p><mark>Lot #2:</mark> Georgy</p>
+								<p class="lot-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p class="price">price: 240 <em>$</em></p>
+								<p><a href="#">Join</a></p>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/lot-3-1.png" alt="">
+							<figcaption>
+								<p><mark>Lot #3:</mark> Liberty</p>
+								<p class="lot-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p class="price">price: 117 <em>$</em></p>
+								<p><a href="#">Join</a></p>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/lot-4-1.png" alt="">
+							<figcaption>
+								<p><mark>Lot #4:</mark> Nursing</p>
+								<p class="lot-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p class="price">price: 246 <em>$</em></p>
+								<p><a href="#">Join</a></p>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<div>
+					<button class="btn-more">See all Lots</button>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="wrapper">
+				<div>
+					<h2 class="title">How it works</h2>
+					<p class="sub-title">The description is in this line</p>
+				</div>
+				<ul class="features">
+					<li>
+						<figure>
+							<img src="images/icon-user.png" alt="">
+							<img src="images/button-right.png" class="features-arrow" alt="">
+							<figcaption>
+								<h3>Register</h3>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/icon-dollar.png" alt="">
+							<img src="images/button-right.png" class="features-arrow" alt="">
+							<figcaption>
+								<h3>Buy or Bid</h3>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/icon-gavel.png" alt="">
+							<img src="images/button-right.png" class="features-arrow" alt="">
+							<figcaption>
+								<h3>Submit a Bid</h3>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/icon-trophy.png" alt="">
+							<figcaption>
+								<h3>Win</h3>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<div class="footer_widgets">
+				<div class="widget">
+					<h3>Information</h3>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Price list</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Registration</a></li>
+						<li><a href="#">Blogs</a></li>
+					</ul>
+				</div>
+				<div class="widget">
+					<h3>Help <span>Center</span></h3>
+					<ul>
+						<li><a href="#">Assistance</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Winner's comments</a></li>
+						<li><a href="#">Refill the account</a></li>
+						<li><a href="#">Payments</a></li>
+					</ul>
+				</div>
+				<div class="widget">
+					<h3>Partners</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Cras ut ipsum</span> faucibus, euismod nisi sed, finibus ex. Ut consectetur iaculis ipsum, vitae scelerisque magna elementum semper.</p>
+					<p>Donec quis tortor justo. Ut ullamcorper interdum vulputate.</p>
+					<ul class="social">
+						<li><a href="#"><i class="social-icon facebook"></i></a></li>
+						<li><a href="#"><i class="social-icon twitter"></i></a></li>
+						<li><a href="#"><i class="social-icon google_plus"></i></a></li>
+						<li><a href="#"><i class="social-icon linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="widget">
+					<h3>Newsletter</h3>
+					<p>Win a coupon of 20% by subscribing to our newsletter, it's easy just enter your e-mail below:</p>
+					<form method="post" name="newsletter" id="callback">
+						<input type="email" name="email" placeholder="E-mail...">
+						<button type="submit" name="commit" id="subscribe_now">Subscribe</button>
+					</form>
+				</div>
+			</div>
+			<div class="copyright_text">
+				<p>OnLine Auction ©2016 <span>Privacy Policy</span></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
